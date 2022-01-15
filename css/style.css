@@ -196,15 +196,16 @@ header {
 *****************/
 
 .newsletter {
-    background-image: url(../images/news.jpg);
+    background-image: url(../images/gear.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    box-shadow: 0 0 40px #dbdbdb;
+    box-shadow: 0 0 40px #c0b2b2;
 }
 .newsletter-inner {
     padding: 100px 0;
     text-align: center;
+    color: #c43a96
 }
 .newsletter-inner h1 {
     margin-bottom: 30px;
@@ -212,10 +213,13 @@ header {
 .newsletter-box form {
 	display: inline-block;
 }
+.subscribe{
+    background-color: #c7a9bd;
+}
 .newsletter-box .subscribe {
-    border: 1px solid #8b8686;
+    border: 1px solid #080303;
     border-radius: 30px;
-    box-shadow: 0 0 40px #dbdbdb;
+    box-shadow: 0 0 40px #c5b6b6;
     display: inline-block;
     font-size: 13px;
     font-weight: 400;
@@ -232,10 +236,10 @@ header {
 
 .footer-area {
     padding: 50px 0;
-    background-color: #0a0826;
+    background-color: #E02C6D;
 }
 .footer-content {
-    color: #fff;
+    color: rgb(222, 224, 230);
     text-align: center;
 }
 .footer-content h3,
@@ -245,8 +249,8 @@ header {
 .footer-social i {
     padding: 7px;
     font-size: 18px;
-    background-color: #413c4a;
-    border-radius: 50%;
+    background-color: #1dd2df;
+    border-radius: 25%;
     margin: 0 5px;
 }
 

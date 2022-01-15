@@ -1,0 +1,343 @@
+/*****************
+****Google Font***
+*****************/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+
+/*****************
+****Common CSS****
+*****************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #3a3a3a;
+}
+section {
+    margin-bottom: 100px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+.main-btn {
+    outline: 0;
+    border: 0;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e02c6d;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*****************
+****Header Area***
+*****************/
+
+header {
+    margin-bottom: 100px;
+}
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-content p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.banner-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.photo {
+    position: relative;
+}
+.photo img {
+    z-index: 2;
+    position: relative;
+}
+.photo::before {
+    content: "";
+    width: 110%;
+    height: 110%;
+    border: 3px solid #f7f0ff;
+    position: absolute;
+    border-radius: 50%;
+    top: -2%;
+    left: -5%;
+}
+.photo:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: #f7f0ff;
+    position: absolute;
+    border-radius: 50%;
+    top: 11%;
+    left: 13%;
+}
+
+
+/* ----------------------------- 
+            animation
+----------------------------- */
+
+.photo img{
+    animation: MoveUpDown  1s ease-in-out infinite  alternate;
+    animation-play-state: running;
+    position: relative;
+}
+@keyframes MoveUpDown {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 15px;
+    }
+}
+
+/*****************************
+****Popular Collection Area***
+*****************************/
+
+.popular-collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-bottom: 30px;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.collection {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px #dbdbdb;
+}
+.collection .product-img img {
+    width: 100%;
+}
+.product-name {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.product-price {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.ratting {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.ratting i {
+    color: #fb8200;
+    font-size: 11px;
+}
+.ratting span{
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: #787885;
+}
+.product-details p {
+    color: #787885;
+    font-size: 16px;
+    font-weight: 600;
+}
+.main-btn span {
+    margin-left: 5px;
+}
+.see-more {
+    text-align: end;
+}
+.see-more a {
+    font-weight: 600;
+    color: #e02c6d;
+}
+.see-more a span{
+    margin-left: 5px;
+}
+
+/*****************
+****newsletter***
+*****************/
+
+.newsletter {
+    background-image: url(../images/news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 40px #dbdbdb;
+}
+.newsletter-inner {
+    padding: 100px 0;
+    text-align: center;
+}
+.newsletter-inner h1 {
+    margin-bottom: 30px;
+}
+.newsletter-box form {
+	display: inline-block;
+}
+.newsletter-box .subscribe {
+    border: 1px solid #8b8686;
+    border-radius: 30px;
+    box-shadow: 0 0 40px #dbdbdb;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    height: 54px;
+    line-height: 30px;
+    padding: 10px 160px 10px 25px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*****************
+****Footer Area***
+*****************/
+
+.footer-area {
+    padding: 50px 0;
+    background-color: #0a0826;
+}
+.footer-content {
+    color: #fff;
+    text-align: center;
+}
+.footer-content h3,
+.footer-content p {
+    margin-bottom: 10px;
+}
+.footer-social i {
+    padding: 7px;
+    font-size: 18px;
+    background-color: #413c4a;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* ------------------
+      Media Query
+--------------------- */
+
+/***Mobile Devices***/
+
+@media only screen and (max-width: 688px) {
+    header {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    section {
+        margin: 50px 0;
+    }
+    .container{
+        width: 100%;
+    }
+    .banner {
+        grid-template-columns: 1fr;
+    }
+    .banner-content {
+        order: 2;
+    }
+    .banner-heading {
+        font-size: 30px;
+    }
+    .banner-content button {
+        margin: 0 auto;
+    }
+    .banner-photo {
+        margin-bottom: 15%;
+    }
+    .banner-photo img {
+        width: 100%;
+    }
+    .photo::before {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .popular-collections {
+        grid-template-columns: 1fr;
+    }
+    .newsletter-inner h1 {
+        font-size: 40px;
+    }
+    .newsletter-box .subscribe {
+        width: 90%;
+    }
+}
+
+/**************
+Tablet Devices
+***************/
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    header{
+        margin-bottom: 0;
+    }
+    .container{
+        width: 100%;
+    }
+    section {
+        margin: 70px 0;
+    }
+    .banner {
+        grid-template-columns: 1fr;
+    }
+    .banner-content {
+        order: 2;
+    }
+    .banner-heading {
+        font-size: 40px;
+    }
+    .banner-photo {
+        align-items: center;
+    }
+    .banner-photo {
+        margin-bottom: 15%;
+    }
+    .popular-collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .newsletter-inner h1 {
+        font-size: 45px;
+    }
+    .newsletter-box .subscribe {
+        width: 90%;
+    }
+}

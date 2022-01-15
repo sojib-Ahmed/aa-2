@@ -222,6 +222,7 @@ header {
     box-shadow: 0 0 40px #c5b6b6;
     display: inline-block;
     font-size: 13px;
+    font-style: unset;
     font-weight: 400;
     height: 54px;
     line-height: 30px;
@@ -239,19 +240,20 @@ header {
     background-color: #E02C6D;
 }
 .footer-content {
-    color: rgb(222, 224, 230);
+    color: rgb(214, 216, 221);
     text-align: center;
 }
 .footer-content h3,
 .footer-content p {
+    font-style: italic;
     margin-bottom: 10px;
 }
 .footer-social i {
-    padding: 7px;
+    padding: 5px;
     font-size: 18px;
-    background-color: #1dd2df;
-    border-radius: 25%;
-    margin: 0 5px;
+    background-color: #25141e;
+    border-radius: 35%;
+    margin: 4px 10px;
 }
 
 /* ------------------
